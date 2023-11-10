@@ -1,0 +1,177 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-image: url('navi.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.features {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.feature {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact {
+    background-color: #eee;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add responsive CSS for smaller screens */
+@media screen and (max-width: 600px) {
+    header nav ul {
+        text-align: center;
+    }
+    header nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .hero-content {
+        padding: 20px;
+    }
+    .features {
+        text-align: left;
+    }
+}
+
+h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(39, 100%, 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  h1 {
+    position: relative;
+    font-size: 5rem;
+  }
+  
+  html {
+    block-size: 100%;
+    inline-size: 100%;
+  }
+  
+  body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  
+  @media (orientation: portrait) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+  
+
+.hover-button {
+    background-color: #e7e7e100;
+    color: beige;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hover-button:hover {
+    background-color: rgba(248, 222, 187, 0.514)
+}
+  
